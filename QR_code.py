@@ -5,6 +5,7 @@
 
 import qrcode 
  
+from PIL import Image
 data =input("Enter the Text or URL: ").strip()
 filename=input("Enter the filename:").strip()
 
@@ -16,3 +17,5 @@ qr.make(fit=True)
 img=qr.make_image(fill_color="red",back_color="blue")
 img.save(filename)
 print(f'QR code saved as {filename}')
+
+
